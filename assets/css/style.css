@@ -74,7 +74,38 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  /* Add at the top of your CSS file */
+@font-face {
+  font-family: 'JetBrainsMonoNerdFont';
+  src: url('../fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMonoNerdFont';
+  src: url('../fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMonoNerdFont';
+  src: url('../fonts/JetBrainsMonoNerdFont-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JetBrainsMonoNerdFont';
+  src: url('../fonts/JetBrainsMonoNerdFont-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  --ff-poppins: 'JetBrainsMonoNerdFont', sans-serif;
+}
 
   /* font-size */
   --fs-1: 24px;
